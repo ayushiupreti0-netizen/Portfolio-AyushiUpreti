@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Charm:wght@700&family=DM+Serif+Display:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0F1117] text-[#F5F7FA] font-poppins;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+/* Awaken-style headings: DM Serif Display (clean elegant serif, loads reliably from Google) */
+.font-awaken {
+  font-family: 'DM Serif Display', serif !important;
+}
+
+@layer utilities {
+  .glass-morphism {
+    background: rgba(15, 17, 23, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(57, 227, 231, 0.1);
+  }
+
+  .nav-glass {
+    background: rgba(15, 17, 23, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(57, 227, 231, 0.15);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 20px rgba(57, 227, 231, 0.3);
+  }
+
+  /* .btn-hero-primary {
+    box-shadow: 0 0 28px rgba(57, 227, 231, 0.45);
+  } */
+
+  .btn-hero-secondary {
+    box-shadow: 0 0 18px rgba(57, 227, 231, 0.25);
+    border: 1px solid rgba(57, 227, 231, 0.6);
+  }
+
+  .work-card {
+    background: #F5F4F0;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(57, 227, 231, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(57, 227, 231, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Hero background – circular.jpg grid + teal tint */
+  .hero-grid-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background-color: #080a0e;
+  }
+
+  /* circular.jpg as grid */
+  .hero-grid-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/grid.png');
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+  /* Teal color tint on grid + edge vignette */
+  .hero-grid-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(
+        ellipse 90% 80% at 50% 45%,
+        rgba(30, 130, 128, 0.12) 0%,
+        rgba(20, 80, 78, 0.06) 45%,
+        rgba(8,10,14,0.9) 100%
+      );
+    pointer-events: none;
+  }
+
+  .animate-wave {
+    animation: wave 1.5s ease-in-out infinite;
+    transform-origin: 70% 70%;
+  }
+
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+  }
+}
