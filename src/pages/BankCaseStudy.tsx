@@ -5,10 +5,9 @@ interface BankCaseStudyProps {
 }
 
 const stats = [
-  { value: '35.4%', label: 'Increase in Impressions' },
-  { value: '29%', label: 'Growth in Reach and Engagement' },
-  { value: '43.6%', label: 'Rise in clicks' },
-  { value: '20K+', label: 'Website visitors in 2025' },
+  { value: '20.6%', label: 'Increase in Impressions' },
+  { value: '12%', label: 'Growth in Reach and Engagement' },
+  
 ];
 
 const exploreOthers = [
@@ -97,9 +96,7 @@ export default function BankCaseStudy({ onNavigate }: BankCaseStudyProps) {
                     </div>
                   ))}
                 </div>
-                <div className="bg-accent rounded-lg py-2.5 text-center">
-                  <span className="text-sm font-poppins font-semibold text-primary">Within one quarter</span>
-                </div>
+                
               </div>
             </div>
           </motion.div>

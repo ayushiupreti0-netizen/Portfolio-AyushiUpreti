@@ -127,7 +127,7 @@ export default function TCCICaseStudy({ onNavigate }: TCCICaseStudyProps) {
 
           {/* Row 2: tcci2 – full width */}
           <div className="aspect-[16/9] overflow-hidden bg-[#1a1c22]">
-            <img src="/TCCI Social.svg" alt="TCCI social" className="w-full h-full object-cover" />
+            <img src="/TCCI Social.jpg" alt="TCCI social" className="w-full h-full object-cover" />
           </div>
           
           <div className=" overflow-hidden">
@@ -157,10 +157,10 @@ export default function TCCICaseStudy({ onNavigate }: TCCICaseStudyProps) {
           {/* Row 4: tcci5 + tcci6 – equal half */}
           <div className="grid grid-cols-2 gap-1">
             <div className="aspect-[4/3] overflow-hidden bg-[#1a1c22]">
-              <img src="/tcci5.jpg" alt="TCCI print materials" className="w-full h-full object-cover" />
+              <img src="/tcci5.png" alt="TCCI print materials" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-[4/3] overflow-hidden bg-[#1a1c22]">
-              <img src="/tcci6.jpg" alt="TCCI stationery design" className="w-full h-full object-cover" />
+              <img src="/tcci6.png" alt="TCCI stationery design" className="w-full h-full object-cover" />
             </div>
           </div>
 
